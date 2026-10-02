@@ -1,5 +1,7 @@
 # Repro: iOS plugins can't receive scene events (opened URLs, Universal Links)
 
+Issue: https://github.com/DartNative/dartnative/issues/65
+
 `ios/Runner/Info.plist` registers the `dnscenerepro` URL scheme. When the app
 is opened with a URL, iOS calls `scene(_:openURLContexts:)` (custom scheme) or
 `scene(_:continue:)` (Universal Link) on the scene delegate, and
